@@ -6,10 +6,9 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const { z } = require('zod');
 const auth = require('./auth');
+require('dotenv').config();
 
-mongoose.connect(
-  'mongodb+srv://pshukla_be22:pRATEEK_2003@cluster0.arsrgr9.mongodb.net/webify'
-);
+mongoose.connect('');
 
 app.use(express.json);
 app.post('/signup', async function (req, res) {
