@@ -8,7 +8,7 @@ const { z } = require('zod');
 const auth = require('./auth');
 require('dotenv').config();
 
-mongoose.connect('');
+mongoose.connect(mongoURL);
 
 app.use(express.json);
 app.post('/signup', async function (req, res) {
